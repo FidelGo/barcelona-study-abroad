@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad Barcelona 2025 | SHSU College of Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --terracotta: #C84B31;
+            --terracotta-dark: #A13D28;
+            --sand: #F5E6D3;
+            --sand-light: #FBF6F0;
+            --deep-blue: #1B4965;
+            --gold: #D4A853;
+            --charcoal: #2D3436;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.7;
+            background: var(--sand-light);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--deep-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--terracotta);
+        }
+
+        .nav-cta {
+            background: var(--terracotta);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            transition: background 0.3s ease, transform 0.3s ease !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--terracotta-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--deep-blue) 0%, #2A5F7C 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--charcoal);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-dates {
+            font-size: 1.1rem;
+            color: var(--sand);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--terracotta);
+            color: white;
+            box-shadow: 0 4px 20px rgba(200, 75, 49, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--terracotta-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(200, 75, 49, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: white;
+        }
+
+        /* Scholarship Banner */
+        .scholarship-banner {
+            background: linear-gradient(90deg, var(--gold) 0%, #E8B85D 100%);
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .scholarship-banner p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        .scholarship-banner strong {
+            color: var(--deep-blue);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            background: var(--white);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .highlight-card {
+            background: var(--sand-light);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .highlight-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--deep-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--charcoal);
+        }
+
+        .highlight-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Experiences Section */
+        .experiences {
+            background: var(--sand-light);
+        }
+
+        .experience-category {
+            margin-bottom: 3rem;
+        }
+
+        .experience-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-category h3 {
+            font-size: 1.5rem;
+            color: var(--terracotta);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--terracotta);
+            display: inline-block;
+        }
+
+        .experience-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .experience-item {
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--deep-blue);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+
+        .experience-item h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--deep-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Costs Section */
+        .costs {
+            background: var(--white);
+        }
+
+        .costs-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .cost-breakdown, .scholarships {
+            background: var(--sand-light);
+            padding: 2.5rem;
+            border-radius: 20px;
+        }
+
+        .cost-breakdown h3, .scholarships h3 {
+            font-size: 1.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .cost-item:last-child {
+            border-bottom: none;
+        }
+
+        .cost-item.total {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--deep-blue);
+            border-top: 2px solid var(--deep-blue);
+            margin-top: 0.5rem;
+            padding-top: 1.5rem;
+        }
+
+        .cost-item.subtotal {
+            font-weight: 600;
+            color: #555;
+            border-top: 1px dashed #ccc;
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+        }
+
+        .cost-item.scholarship {
+            color: var(--terracotta);
+            font-weight: 500;
+        }
+
+        .cost-item.scholarship span:last-child {
+            color: var(--terracotta);
+            font-weight: 600;
+        }
+
+        .scholarship-item {
+            background: var(--white);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--gold);
+        }
+
+        .scholarship-item h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+
+        .scholarship-item .amount {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--terracotta);
+        }
+
+        .scholarship-item p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .scholarship-total {
+            background: var(--deep-blue);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .scholarship-total p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .scholarship-total .amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        /* Academics Section */
+        .academics {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, #2A5F7C 100%);
+            color: white;
+        }
+
+        .academics .section-header h2 {
+            color: white;
+        }
+
+        .academics .section-header p {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .academics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .academic-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .academic-card h3 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .academic-card p, .academic-card li {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+        }
+
+        .academic-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .academic-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .academic-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* Apply Section */
+        .apply {
+            background: var(--sand);
+            text-align: center;
+        }
+
+        .apply-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .apply h2 {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 1rem;
+        }
+
+        .apply p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .apply-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .video-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--deep-blue);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+
+        .video-link:hover {
+            color: var(--terracotta);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .footer-content p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-content a {
+            color: var(--sand);
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .costs-container {
+                grid-template-columns: 1fr;
+            }
+
+            .cost-breakdown, .scholarships {
+                padding: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.9rem 2rem;
+            }
+        }
+
+        /* Smooth reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">SHSU Barcelona 2025</a>
+            <ul class="nav-links">
+                <li><a href="#highlights">Program</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#costs">Costs</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#apply" class="nav-cta">Apply Now</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Summer 2025 • COBA Study Abroad</span>
+            <h1>Study Abroad in <span>Barcelona</span></h1>
+            <p class="hero-subtitle">Earn 6 credit hours while exploring Spain's culture, business, and Mediterranean lifestyle</p>
+            <p class="hero-dates">📅 May 24 – June 10, 2025 • 18 Days in Barcelona</p>
+            <div class="hero-cta">
+                <a href="https://shsu.via-trm.com/program_brochure/10615/" class="btn btn-primary" target="_blank">Apply Now</a>
+                <a href="#experiences" class="btn btn-secondary">Explore the Program</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Banner -->
+    <div class="scholarship-banner">
+        <p>🎓 Up to <strong>$2,800 in scholarships</strong> available — First 11 students get the COBA scholarship. <strong>Only 4 spots left!</strong></p>
+    </div>
+
+    <!-- Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Program Highlights</h2>
+                <p>An unforgettable blend of academics, culture, and adventure in one of Europe's most vibrant cities</p>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">📚</div>
+                    <h3>6 Credit Hours</h3>
+                    <p>Take ECON 4085 and ECON 4360, covering Spanish/EU economics, history, culture, and business. Counts as upper-level credits for ECON or COBA majors.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏛️</div>
+                    <h3>World-Class Speakers</h3>
+                    <p>Learn from exceptional professors and industry speakers at Universitat Abat Oliba CEU. All classes and visits conducted in English.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏖️</div>
+                    <h3>Prime Location</h3>
+                    <p>Stay near Passeig de Gràcia with beaches minutes away. Unlimited metro access included—explore Barcelona freely!</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">✨</div>
+                    <h3>Stress-Free Learning</h3>
+                    <p>No homework or exams while in Spain—focus on the experience. Exams and essays completed online after returning home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>What You'll Experience</h2>
+                <p>From world-famous landmarks to unique business visits and meaningful service opportunities</p>
+            </div>
+
+            <div class="experience-category">
+                <h3>🏢 Business & Social Enterprise Visits</h3>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h4>L'Olivera Winery</h4>
+                        <p>Last year's student favorite! Visit a stunning Mediterranean winery that trains at-risk youth for careers in hospitality. Walk among grape vines and olive trees, then enjoy wine and olive oil tastings in one of the most beautiful landscapes you'll ever see.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Fundació Trinijove</h4>
+                        <p>A famous European foundation helping at-risk youth and migrants integrate into Spanish society. Includes an amazing tour of Barcelona's underground water system.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Apunts Social Enterprise</h4>
+                        <p>Learn about an innovative business model where 75% of employees have certified mental health conditions, working in printing and advertising.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Delta del Ebro & Buda Island</h4>
+                        <p>Official reception by the Mayor of Sant Jaume d'Enveja, wetland exploration, and visit to a natural island with wildlife and a horse sanctuary. Possible overnight stay!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-category">
+                <h3>🎨 Cultural Tours (All with English-Speaking Guides)</h3>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h4>La Sagrada Familia</h4>
+                        <p>Experience Gaudí's masterpiece in person—one of the most iconic and awe-inspiring buildings in the world.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Picasso Museum</h4>
+                        <p>Explore the life and work of the greatest artist of the 20th century, who lived in Barcelona and was born nearby.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>The Gothic Quarter & Barcelona Cathedral</h4>
+                        <p>Wander through one of Europe's best-preserved medieval neighborhoods—narrow streets, historic plazas, small bars, and hidden gems.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>King's Place & Roman Barcelona</h4>
+                        <p>Dr. Gonzalez's personal favorite! An incredible museum revealing Barcelona's Roman history right in the heart of the Gothic Quarter.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Refuge 307</h4>
+                        <p>Second student favorite! Enter a real bomb shelter from the Spanish Civil War and learn about its connection to World War II. Fascinating and slightly eerie.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Roman Funeral Way</h4>
+                        <p>A fascinating look at Roman burial practices in Barcelona over 2,400 years ago.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-category">
+                <h3>❤️ Service & Community</h3>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h4>Sant Ana Church</h4>
+                        <p>Volunteer to feed the homeless in the Gothic Quarter—an extremely touching experience for many of us.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Barcelona Food Bank</h4>
+                        <p>Help people in need while learning about community support systems in Spain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-category">
+                <h3>🌴 Free Time & Social Life</h3>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h4>Beaches, Nightlife & Exploration</h4>
+                        <p>Afternoons and weekends are yours! Barcelona's beaches are minutes away. Beautiful Mediterranean beaches with crystal-clear water are just 30 minutes out. Social events with Spanish students at our host university. Incredible food, nightlife, and cultural experiences for all budgets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Costs Section -->
+    <section class="costs" id="costs">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Program Costs & Scholarships</h2>
+                <p>Affordable study abroad with generous scholarship support</p>
+            </div>
+            <div class="costs-container">
+                <div class="cost-breakdown">
+                    <h3>Cost Breakdown</h3>
+                    <div class="cost-item">
+                        <span>Program Fee</span>
+                        <span>$1,742</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Tuition (6 credit hours)</span>
+                        <span>~$2,200</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Airfare (estimated)</span>
+                        <span>~$1,000</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Meals (estimated)</span>
+                        <span>~$500</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Books & Personal</span>
+                        <span>~$400</span>
+                    </div>
+                    <div class="cost-item subtotal">
+                        <span>Subtotal</span>
+                        <span>~$5,842</span>
+                    </div>
+                    <div class="cost-item scholarship">
+                        <span>COBA Scholarship</span>
+                        <span>- $1,800</span>
+                    </div>
+                    <div class="cost-item scholarship">
+                        <span>Bearkat Abroad Scholarship*</span>
+                        <span>- $1,000</span>
+                    </div>
+                    <div class="cost-item total">
+                        <span>Net Total (with scholarships)</span>
+                        <span>~$3,042</span>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;"><strong>Program fee includes:</strong> Accommodations, all visits, university facilities, city transportation, unlimited metro pass, guest speakers, and ~5 meals.<br><br>*Bearkat Abroad Scholarship requires GPA ≥ 2.75. COBA Scholarship available to first 11 accepted students.</p>
+                </div>
+                <div class="scholarships">
+                    <h3>Available Scholarships</h3>
+                    <div class="scholarship-item">
+                        <h4>COBA Scholarship</h4>
+                        <span class="amount">$1,800</span>
+                        <p>First 11 accepted students. <strong>Only 4 spots remaining!</strong> Covers your entire program fee.</p>
+                    </div>
+                    <div class="scholarship-item">
+                        <h4>Bearkat Abroad (GEC)</h4>
+                        <span class="amount">~$1,000</span>
+                        <p>Automatic for students with GPA ≥ 2.75. Covers your airfare!</p>
+                    </div>
+                    <div class="scholarship-total">
+                        <p>Total Scholarship Potential</p>
+                        <span class="amount">Up to $2,800</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section class="academics" id="academics">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Academic Experience</h2>
+                <p>Engaging coursework designed to complement your Barcelona experience</p>
+            </div>
+            <div class="academics-grid">
+                <div class="academic-card">
+                    <h3>Courses</h3>
+                    <p>Two upper-level economics courses covering Spanish and EU economics, history, culture, and business practices.</p>
+                    <ul>
+                        <li>ECON 4085</li>
+                        <li>ECON 4360</li>
+                        <li>Counts toward ECON or COBA major</li>
+                        <li>Can substitute for degree requirements</li>
+                    </ul>
+                </div>
+                <div class="academic-card">
+                    <h3>Schedule in Spain</h3>
+                    <p>Classes at Universitat Abat Oliba CEU on Mondays, Tuesdays, and Thursdays. Business and cultural visits on other days.</p>
+                    <ul>
+                        <li>Outstanding guest speakers</li>
+                        <li>All sessions in English</li>
+                        <li>Afternoons free to explore</li>
+                        <li>Weekends for travel</li>
+                    </ul>
+                </div>
+                <div class="academic-card">
+                    <h3>Assignments</h3>
+                    <p>Focus on the experience—no homework or exams while in Spain!</p>
+                    <ul>
+                        <li>Two online exams after return</li>
+                        <li>One reflection essay</li>
+                        <li>All materials on Blackboard</li>
+                        <li>Most students earn an A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section class="apply" id="apply">
+        <div class="section-container">
+            <div class="apply-content">
+                <h2>Ready for Barcelona?</h2>
+                <p>Join us for an unforgettable experience. Apply now to secure your spot and scholarship!</p>
+                <div class="apply-buttons">
+                    <a href="https://shsu.via-trm.com/program_brochure/10615/" class="btn btn-primary" target="_blank">Apply Now →</a>
+                </div>
+                <a href="https://www.youtube.com/watch?v=LB415VONYM0" class="video-link" target="_blank">
+                    ▶ Watch the program video
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Questions?</h3>
+            <p>Dr. Fidel Gonzalez</p>
+            <p>Faculty Director, SHSU Study Abroad Barcelona</p>
+            <p>Department of Economics and International Business</p>
+            <p>Sam Houston State University</p>
+            <p style="margin-top: 1rem;"><a href="mailto:fidel.gonzalez@shsu.edu">fidel.gonzalez@shsu.edu</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sam Houston State University • College of Business Administration</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal
+        const reveals = document.querySelectorAll('.highlight-card, .experience-item, .academic-card');
+        
+        const revealOnScroll = () => {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const revealTop = el.getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        };
+
+        // Add reveal class
+        reveals.forEach(el => el.classList.add('reveal'));
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+    </script>
+</body>
+</html>
