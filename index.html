@@ -120,7 +120,7 @@
         /* Hero Section */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #2A5F7C 100%);
+            background: url('barcelona_overview.png') center center / cover no-repeat;
             position: relative;
             display: flex;
             align-items: center;
@@ -136,8 +136,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
+            background: linear-gradient(135deg, rgba(27, 73, 101, 0.85) 0%, rgba(42, 95, 124, 0.75) 100%);
         }
 
         .hero-content {
@@ -159,6 +158,14 @@
             }
         }
 
+        .hero-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
         .hero-badge {
             display: inline-block;
             background: var(--gold);
@@ -167,15 +174,19 @@
             border-radius: 30px;
             font-weight: 600;
             font-size: 0.9rem;
-            margin-bottom: 1.5rem;
             letter-spacing: 0.5px;
+        }
+
+        .hero-badge.open-majors {
+            background: var(--white);
+            color: var(--deep-blue);
         }
 
         .hero h1 {
             font-size: clamp(2.5rem, 6vw, 4.5rem);
             color: var(--white);
             margin-bottom: 1.5rem;
-            text-shadow: 0 4px 30px rgba(0,0,0,0.2);
+            text-shadow: 0 4px 30px rgba(0,0,0,0.3);
         }
 
         .hero h1 span {
@@ -184,7 +195,7 @@
 
         .hero-subtitle {
             font-size: 1.3rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             margin-bottom: 2rem;
             font-weight: 300;
         }
@@ -201,6 +212,7 @@
             gap: 1rem;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 2rem;
         }
 
         .btn {
@@ -234,6 +246,26 @@
         .btn-secondary:hover {
             background: rgba(255,255,255,0.1);
             border-color: white;
+        }
+
+        .video-link-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--white);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .video-link-hero:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
         }
 
         /* Scholarship Banner */
@@ -644,6 +676,11 @@
                 font-size: 1.1rem;
             }
 
+            .hero-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
             section {
                 padding: 3rem 1.5rem;
             }
@@ -701,7 +738,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <span class="hero-badge">Summer 2026 • COBA Study Abroad</span>
+            <div class="hero-badges">
+                <span class="hero-badge">Summer 2026 • COBA Study Abroad</span>
+                <span class="hero-badge open-majors">🎓 Open to All Majors</span>
+            </div>
             <h1>Study Abroad in <span>Barcelona</span></h1>
             <p class="hero-subtitle">Earn 6 credit hours while exploring Spain's culture, business, and Mediterranean lifestyle</p>
             <p class="hero-dates">📅 May 24 – June 10, 2026 • 18 Days in Barcelona</p>
@@ -709,6 +749,9 @@
                 <a href="https://shsu.via-trm.com/program_brochure/10615/" class="btn btn-primary" target="_blank">Apply Now</a>
                 <a href="#experiences" class="btn btn-secondary">Explore the Program</a>
             </div>
+            <a href="https://www.youtube.com/watch?v=LB415VONYM0" class="video-link-hero" target="_blank">
+                ▶ Watch the Program Video
+            </a>
         </div>
     </section>
 
@@ -972,7 +1015,7 @@
             <p style="margin-top: 1rem;"><a href="mailto:fxg001@shsu.edu">fxg001@shsu.edu</a></p>
         </div>
         <div class="footer-bottom">
-            <p> 2026 Sam Houston State University • College of Business Administration</p>
+            <p>© 2026 Sam Houston State University • College of Business Administration</p>
         </div>
     </footer>
 
